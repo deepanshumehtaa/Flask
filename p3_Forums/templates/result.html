@@ -1,0 +1,16 @@
+<! doctype html>
+<! tr = a row in an HTML table, th = a head in an HTML table, td = data cell in an HTML table>
+<! table border is thickness of the boundry of the table >
+
+<html>
+   <body>
+      <table border = 2>
+         {% for key, value in result.items() %}
+            <tr>
+               <th> {{ key }} </th>
+               <td> {{ value }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+   </body>
+</html>
